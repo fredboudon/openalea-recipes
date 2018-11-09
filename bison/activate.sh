@@ -5,7 +5,7 @@ export _BISON_PKGDATADIR=$BISON_PKGDATADIR
 
 #!/bin/bash
 if [ $CONDA_BUILD = 0 ]; then
-  BISON_PKGDATADIR=$CONDA_ENV_PATH/share/bison
+  BISON_PKGDATADIR=$CONDA_PREFIX/share/bison
 else
   BISON_PKGDATADIR=$CONDA_DEFAULT_ENV/share/bison
 fi
